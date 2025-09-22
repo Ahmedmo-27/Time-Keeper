@@ -44,7 +44,7 @@ This project was developed during the **DEPI Android Track**, where I focused on
 ## 📥 Installation
 
 1. Clone the repository:  
-   git clone https://github.com/your-username/TimeKeeper.git
+   git clone https://github.com/Ahmedmo-27/TimeKeeper.git
 Open in Android Studio.
 
 Build & run on an emulator or physical device.
