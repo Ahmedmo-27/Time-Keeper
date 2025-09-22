@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo"
+            android:contentDescription="App Logo"
+            android:layout_marginBottom="24dp"
+            android:scaleType="fitCenter"/>
+
+        <!-- Display for stopwatch/countdown -->
+        <TextView
+            android:id="@+id/tvTimeDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:textColor="#1E88E5"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Stopwatch controls -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnStopwatchStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"/>
+
+            <Button
+                android:id="@+id/btnStopwatchPause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pause"
+                android:backgroundTint="#FBC02D"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginStart="16dp"/>
+
+            <Button
+                android:id="@+id/btnStopwatchReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:backgroundTint="#E53935"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+        <!-- Laps List -->
+        <ListView
+            android:id="@+id/lvLaps"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FFFFFF"
+            android:divider="#B0BEC5"
+            android:dividerHeight="1dp"
+            android:layout_marginTop="24dp"
+            android:padding="8dp"/>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#B0BEC5"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Countdown input -->
+        <EditText
+            android:id="@+id/etCountdownInput"
+            android:hint="Enter countdown (seconds)"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:textColor="#37474F"
+            android:textSize="16sp"/>
+
+        <!-- Countdown buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCountdownStart"
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#4CAF50"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Start Countdown"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnCountdownPause"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#FBC02D"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Pause"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnCountdownReset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#E53935"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Reset"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
