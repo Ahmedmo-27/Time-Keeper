@@ -22,17 +22,6 @@ Built with **Kotlin** and **XML layouts**, the app focuses on simplicity, accura
 - **Android Jetpack Components** – activity lifecycle, view binding, etc.  
 - **Material Design** – for a clean and responsive interface  
 
-## 📂 Project Structure
-
-app/
-├─ java/com/example/stopwatch/ui/
-│ └─ MainActivity.kt
-├─ res/
-│ ├─ layout/ # XML UI layouts
-│ ├─ values/ # colors, strings, styles
-│ └─ drawable/ # icons and images
-└─ AndroidManifest.xml
-
 ## 🎯 Learning Outcomes
 
 This project was developed during the **DEPI Android Track**, where I focused on:  
